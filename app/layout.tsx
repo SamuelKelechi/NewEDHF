@@ -31,7 +31,7 @@ export default function RootLayout({
             height: "36.625rem",
             borderRadius: "36.625rem",
             background: "rgba(0, 51, 153, 0.15)",
-            filter:"blur(200px)",
+            filter: "blur(150px)",
             zIndex: -1,
           }}
         ></div>
@@ -39,12 +39,13 @@ export default function RootLayout({
           style={{
             position: "absolute",
             top: "25.6875rem",
-            left: "76.75rem",
+            // left: "76.75rem",
+            right: "-6.1%",
             width: "23.875rem",
             height: "23.875rem",
             borderRadius: "23.875rem",
             background: "rgba(177, 104, 234, 0.50)",
-            filter: "blur(200px)",
+            filter: "blur(150px)",
             zIndex: -1,
           }}
         ></div>
