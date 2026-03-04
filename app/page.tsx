@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Hero from "./home/HeroSection/Hero"
 import Welcome from "./home/WelcomeSection/Welcome"
 import Service from "./home/ServiceSection/Service"
