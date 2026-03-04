@@ -1,0 +1,214 @@
+.supportSection {
+    width: 100%;
+    background: linear-gradient(
+    to right,
+    #e2e3e8 0%,
+    #e7e8eb 10%,
+    #f2f3f7 25%,
+    #ffffff 45%,
+    #ffffff 55%,
+    #f7f2fa 75%,
+    #efe6f5 90%,
+    #e8dcf0 100%
+  );
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+/* ================= LEFT ================= */
+
+.left {
+  flex: 1;
+}
+
+.tag {
+    color: #003399;
+}
+
+.title {
+    color: #333333;
+    margin-top: 5px;
+}
+
+.description {
+    color: #606060;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.donateBtn {
+  background: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  height: 45px;
+  width: 120px;
+}
+
+.donateBtn:hover {
+  background: #16a34a;
+}
+
+.donateHolder{
+    display: flex;
+    width: 100%;
+}
+
+.donateBtnIcon{
+    width: 110px;
+    height: 30px;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+
+/* ================= RIGHT ================= */
+
+.right {
+  flex: 1;
+  position: relative;
+  height: 290px;
+}
+
+/* Base card style */
+.cardTopLeft,
+.cardTopRight,
+.cardBottom {
+  position: absolute;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  width: 220px;
+  text-align: center;
+  border: 1px solid #a5a5a5;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardBottomLeft{
+    width: 70px;
+  position: absolute;
+  bottom: 45px;
+  left: 80px
+}
+
+.cardBottomRight{
+    width: 20px;
+    position: absolute;
+    bottom: 65px;
+    right: 120px
+}
+
+.cardTopLeft {
+  top: 0px;
+  left: 45px;
+}
+
+.cardTopRight {
+  top: 0;
+  right: 45px;
+}
+
+.cardBottom {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wrapIcon{
+    display: flex;
+    align-items: center;
+    gap: 10;
+}
+
+/* Numbers */
+.cardTopLeft h3,
+.cardTopRight h3,
+.cardBottom h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+
+.cardTopLeft p,
+.cardTopRight p,
+.cardBottom p {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    position: static;
+    margin-top: 40px;
+  }
+
+  .cardTopLeft,
+  .cardTopRight,
+  .cardBottom {
+    position: static;
+    transform: none;
+    width: 200px;
+  }
+  .cardBottomLeft{
+    display: none;
+}
+
+.cardBottomRight{
+    display: none;
+}
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .cardTopLeft,
+  .cardTopRight,
+  .cardBottom {
+    width: 100%;
+    max-width: 300px;
+  }
+
+    .donateHolder{
+        justify-content: center;
+    }
+    .donateBtnIcon{
+        width: 90px;
+        height: 30px;
+    }
+}

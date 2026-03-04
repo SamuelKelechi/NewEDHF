@@ -1,0 +1,320 @@
+.heroSection1 {
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #d8dce6 0%,
+    #e4e7ee 10%,
+    #f2f3f7 25%,
+    #ffffff 45%,
+    #ffffff 55%,
+    #f7f2fa 75%,
+    #efe6f5 90%,
+    #e8dcf0 100%
+  );
+  padding: 50px 0 0 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.heroContent {
+  width: 45%;
+  padding-top: 20px;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #1a1a2e;
+  margin: 0 0 24px 0;
+}
+
+.heroTitleHighlight {
+  color: #1e5fbb;
+}
+
+.heroDescription {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #5a5a6e;
+  margin: 0 0 32px 0;
+  max-width: 420px;
+}
+
+.heroButtons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.heroDonateBtn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.heroDonateBtn:hover {
+  background-color: #43a047;
+}
+
+.heroReadMoreBtn {
+  background-color: transparent;
+  color: #1a1a2e;
+  border: 1.5px solid #d0d0d0;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.heroReadMoreBtn:hover {
+  border-color: #1a1a2e;
+}
+
+.heroReadMoreBtn svg {
+  transition: transform 0.3s ease;
+}
+
+.heroReadMoreBtn:hover svg {
+  transform: translate(2px, -2px);
+}
+
+/* Images Section */
+.heroImages {
+  width: 50%;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heroImagesLeft{
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroImagesRight{
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.helpingHand{
+  margin-top: -8px;
+  width: 150px;
+}
+
+.profileIcon{
+  width: 35px;
+  margin-right: -190px;
+  margin-bottom: 15px;
+}
+
+.Icon1{
+  width: 35px;
+  margin-bottom: -20px;
+  z-index: 100;
+  margin-left: -15px;
+}
+
+.Icon2{
+  width: 35px;
+  margin-top: -20px;
+  z-index: 100;
+  margin-left: -15px;
+}
+
+/* Values Bar */
+.heroValuesBar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: center;
+}
+
+.heroValue {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #8a8aa3;
+}
+
+.heroValueSeparator {
+  color: #c0c0d0;
+  font-size: 1.5rem;
+  font-weight: bold
+}
+
+/* Responsive Styles */
+@media (max-width: 1100px) {
+  .heroContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .heroContent {
+    max-width: 600px;
+    padding-top: 0;
+  }
+
+  .heroDescription {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heroButtons {
+    justify-content: center;
+  }
+
+  .heroImages {
+    width: 100%;
+    max-width: 550px;
+    min-height: 400px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContent{
+    width: 100%;
+  }
+  .heroImages{
+    width: 100%;
+    height: 300px;
+    padding: 0;
+  }
+  .heroSection1 {
+    padding: 40px 0 0 0;
+  }
+
+  .heroContainer {
+    padding: 0 20px;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroDescription {
+    font-size: 0.95rem;
+  }
+
+  .heroImageBottom {
+    width: 200px;
+    height: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .heroHelpingHand {
+    right: -10px;
+    bottom: 10px;
+    padding: 8px 12px;
+    font-size: 0.75rem;
+  }
+
+  .heroValuesBar {
+    gap: 16px;
+    padding: 0 0 20px 0; 
+  }
+
+  .heroValue {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .heroDonateBtn,
+  .heroReadMoreBtn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .heroImages {
+    min-height: 250px;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .heroIconCoral,
+  .heroIconBlue,
+  .heroIconPurple {
+    width: 36px;
+    height: 36px;
+  }
+
+  .heroIconCoral svg,
+  .heroIconBlue svg,
+  .heroIconPurple svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .heroValuesBar {
+    gap: 12px;
+    margin-top: 0;
+  }
+
+  .heroValue {
+    font-size: 0.85rem;
+  }
+
+  .heroValueSeparator {
+    font-size: 0.85rem;
+  }
+  .helpingHand{
+    width: 100px;
+  }
+  .profileIcon{
+    width: 25px;
+    margin-right: -110px;
+    margin-bottom: 5px;
+  }
+  .Icon1{
+    width: 25px;
+  }
+
+.Icon2{
+    width: 25px;
+  }
+
+}
