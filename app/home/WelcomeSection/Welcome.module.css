@@ -1,0 +1,85 @@
+.welcomeContainer{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+     background: linear-gradient(
+    to right,
+    #e2e3e8 0%,
+    #e7e8eb 10%,
+    #f2f3f7 25%,
+    #ffffff 45%,
+    #ffffff 55%,
+    #f7f2fa 75%,
+    #efe6f5 90%,
+    #e8dcf0 100%
+  );
+}
+
+.welcomeContainerWrapper{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcomeContainerLeft{
+    width: 49%;
+}
+
+.welcomeContainerRight{
+    width: 49%;
+    margin-top: 10px;
+}
+
+.welcomeContainerHeader{
+    color: #003399;
+}
+
+.welcomeContainerSubheader{
+    color: #333333;margin-top: 5px;
+}
+
+.welcomeParagraph{
+    color: #606060;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.welcomeReadMoreBtn{
+    background-color: #3AB54A;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 650px){
+    .welcomeContainerWrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .welcomeContainerLeft{
+        width: 100%;
+    }
+    .welcomeContainerRight{
+        width: 100%;
+    }
+    .welcomeContainerHeader{
+        font-size: 16px;
+    }
+    .welcomeContainerSubheader{
+        font-size: 18px;
+    }
+    .welcomeReadMoreBtn{
+        padding: 10px 15px;
+    }
+}
