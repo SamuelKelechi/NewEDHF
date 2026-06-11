@@ -1,10 +1,11 @@
 
 
-
 export default function Donate () {
     return (
         <>
-        DONATE PAGE
+        <div>
+            This is the Donate Page
+        </div>
         </>
     )
 }
